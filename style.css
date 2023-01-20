@@ -52,7 +52,6 @@ body {
 }
 .header__about {
   display: flex;
-  align-items: center;
   gap: 60px;
   padding-left: 27px;
 }
@@ -70,9 +69,11 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 20px;
+  object-fit: cover;
 }
 .about__content {
   flex: 0 1 526px;
+  align-self: center;
 }
 .header__title {
   font-size: 70px;
@@ -130,12 +131,16 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: #ffffff;
-  background: #118da8;
-  padding: 12px 15px 12px 20px;
+  background-color: #118da8;
+  padding: 12px 20px;
   border-radius: 6px;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
-
+.button:active {
+  transform: scale(0.93);
+  background-color: #118df8;
+}
 .episodes__cards {
   display: flex;
   flex-direction: column;
@@ -174,10 +179,12 @@ body {
 }
 .card__episode-number {
   display: block;
+  margin-bottom: 18px;
+}
+.topic_blue-text {
   font-size: 17px;
   line-height: 1.6;
   color: #118da8;
-  margin-bottom: 18px;
 }
 .card__title {
   font-size: 64px;
@@ -191,4 +198,108 @@ body {
   font-size: 22px;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.7);
+}
+/**************** MEET HOST ***************/
+.meet-host {
+  margin-bottom: 140px;
+}
+.meet-host__inner {
+  display: flex;
+  gap: 94px;
+}
+.meet-host__body {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 556px;
+}
+.arrow-wrap {
+  width: 112px;
+  height: 112px;
+  background-color: #118da8;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 20px;
+}
+.arrow {
+  width: 78px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 55px;
+  left: 17px;
+}
+.arrow::before,
+.arrow::after {
+  content: "";
+  background-color: #fff;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  right: -5px;
+}
+.arrow::before {
+  transform: rotate(45deg);
+  top: -10px;
+}
+.arrow::after {
+  transform: rotate(-45deg);
+  top: 10px;
+}
+.host-name {
+  font-size: 65px;
+  margin-bottom: 28px;
+}
+.host-about {
+  margin-bottom: 33px;
+}
+.meet-host__image {
+  position: relative;
+}
+.meet-host__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+/**************** SUBSCRIBE ***************/
+.subscribe__inner {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 60px 75px 60px;
+  gap: 20px;
+  border-radius: 32px;
+  margin-bottom: 140px;
+}
+.subscribe__header {
+  flex: 0 1 36%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 0 0 44%;
+}
+.form__input {
+  padding: 30px 0 27px 19px;
+  background-color: #191919;
+  border: 1px solid #191919;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 24px;
+}
+.form__input::placeholder {
+  font-size: 24px;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.7);
+}
+.form__input:focus {
+  outline: 1px solid #118da8;
+}
+
+.form__button {
+  align-self: flex-start;
+  border: none;
 }
