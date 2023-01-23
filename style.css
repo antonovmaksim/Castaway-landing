@@ -176,6 +176,7 @@ body {
   background-color: #191919;
   border-radius: 6px;
   margin-bottom: 48px;
+  padding: 5px 8px;
 }
 .card__episode-number {
   display: block;
@@ -351,3 +352,296 @@ body {
 }
 
 /**************** FOOTER ***************/
+.footer {
+  margin-bottom: 140px;
+}
+.footer__inner {
+  display: flex;
+  gap: 16px;
+}
+.footer__socials {
+  flex: 0 1 33%;
+}
+.footer__logo {
+  margin-bottom: 25px;
+}
+.footer__logo img {
+  width: 100%;
+  display: block;
+}
+.socials-row {
+  display: flex;
+  gap: 12px;
+}
+.social__item svg path {
+  transition: all 0.3s ease;
+}
+.social__item:hover svg path {
+  transform: scale(1.15) translateX(-2px);
+  stroke: #118da8;
+}
+.footer__menu {
+  display: flex;
+  justify-content: space-around;
+  flex: 0 1 33%;
+  gap: 10px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__services-list {
+  flex: 0 1 33%;
+}
+
+@media screen and (max-width: 960px) {
+  .header__title {
+    font-size: 54px;
+    margin-bottom: 65px;
+  }
+  .header__title_underlined-text::after {
+    left: -20px;
+    transform: scale(0.8);
+  }
+  .latest-episodes,
+  .meet-host,
+  .subscribe__inner .feedback,
+  .footer {
+    margin-bottom: 100px;
+  }
+  .latest-episodes__header {
+    margin-bottom: 50px;
+  }
+  .card__image img {
+    object-position: right;
+  }
+  .section__title {
+    font-size: 46px;
+  }
+  .card__title {
+    font-size: 42px;
+    margin-bottom: 22px;
+  }
+  .feedback__title {
+    font-size: 24px;
+  }
+  .feedback__author {
+    font-size: 18px;
+  }
+  .feedback__link {
+    font-size: 16px;
+  }
+  .feedback__item {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .header__title {
+    font-size: 46px;
+    margin-bottom: 65px;
+  }
+  .header__title_underlined-text::after {
+    left: -26px;
+    transform: scale(0.7);
+  }
+  .header,
+  .latest-episodes,
+  .meet-host,
+  .subscribe__inner,
+  .feedback,
+  .footer {
+    margin-bottom: 80px;
+  }
+  .latest-episodes__header {
+    margin-bottom: 40px;
+  }
+  .desc-text {
+    font-size: 18px;
+  }
+  .section__title {
+    font-size: 40px;
+  }
+  .card__topic {
+    margin-bottom: 10px;
+  }
+  .card__image {
+    display: none;
+  }
+  .card__title {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+  .subscribe__inner {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 45px 45px 50px 45px;
+    gap: 15px;
+  }
+  .footer__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__socials,
+  .footer__services-list {
+    flex: 0 1 100%;
+  }
+  .socials-row {
+    justify-content: center;
+  }
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+  .footer__logo img {
+    width: initial;
+  }
+  .footer__menu {
+    margin-bottom: 15px;
+  }
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 0 0 100px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .header__title {
+    font-size: 40px;
+  }
+  .header__title_underlined-text::after {
+    left: -34px;
+    transform: scale(0.6);
+  }
+  .header__menu {
+    flex-direction: column;
+    padding: 20px 0;
+    margin-bottom: 10px;
+  }
+  .header__logo {
+    flex: 0 0 40px;
+  }
+  .header__about {
+    flex-direction: column-reverse;
+    gap: 25px;
+    padding-left: 0px;
+  }
+  .about__content {
+    flex: 0 1 50%;
+    align-self: center;
+    text-align: center;
+  }
+  .about__image::before {
+    display: none;
+  }
+  .header__title {
+    margin-bottom: 20px;
+  }
+  .services__list {
+    justify-content: center;
+  }
+  .button {
+    padding: 8px 15px;
+  }
+  .header,
+  .latest-episodes,
+  .meet-host,
+  .subscribe__inner,
+  .feedback,
+  .footer {
+    margin-bottom: 80px;
+  }
+  .latest-episodes__header {
+    margin-bottom: 10px;
+    padding: 7px 0 10px 0;
+  }
+  .desc-text {
+    font-size: 18px;
+  }
+  .section__title {
+    font-size: 36px;
+  }
+  .card__title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .episodes__cards {
+    gap: 25px;
+  }
+  .meet-host__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .meet-host__body {
+    flex: 0 1 50%;
+  }
+  .arrow-wrap {
+    display: none;
+  }
+
+  .host-name {
+    margin-bottom: 20px;
+  }
+  .host-about {
+    margin-bottom: 15px;
+  }
+
+  .subscribe__inner {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 35px;
+    gap: 15px;
+  }
+  .subscribe__inner::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 380px) {
+  .header,
+  .latest-episodes,
+  .meet-host,
+  .subscribe__inner,
+  .feedback,
+  .footer {
+    margin-bottom: 40px;
+  }
+  .header__title {
+    font-size: 26px;
+  }
+  .header__title_underlined-text::after {
+    left: -48px;
+    transform: scale(0.4);
+  }
+  .header__menu {
+    padding-bottom: 10px;
+  }
+  .nav__list {
+    gap: 10px;
+  }
+  .button {
+    font-size: 14px;
+  }
+  .header__about {
+    gap: 20px;
+  }
+  .desc-text {
+    font-size: 16px;
+  }
+  .section__title {
+    font-size: 30px;
+  }
+  .card__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .episodes__cards {
+    gap: 15px;
+  }
+  .subscribe__inner {
+    padding: 25px;
+  }
+  .form__input {
+    padding: 20px 0 15px 15px;
+  }
+}
